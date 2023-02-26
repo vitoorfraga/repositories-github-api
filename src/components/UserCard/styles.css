@@ -9,6 +9,22 @@
     align-items: center;
     flex-direction: column;
     gap: 22px;
+
+    transition: box-shadow .3s ease-out;
+}
+
+.card-user:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.user-image{
+    width: 121px;
+    height: 121px;
+    border-radius: 50%;
+}
+
+.user-image img{
+    width: 100%;
 }
 
 .user-name{

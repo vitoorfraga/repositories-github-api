@@ -3,29 +3,34 @@ import Button from '../Button';
 import "./styles.css";
 import "./responsive.css";
 
-function RepositoryCard() {
+import linkIcon from "./../../images/icons/link-2.png"
+
+function RepositoryCard({title, description, url, pageUrl}) {
 	return (
 		<div className="repository-card">
 			<div className="repository-name">
-				<span>Nome do repositório</span>
+				<span>{title && title.replaceAll('-', ' ')}</span>
 			</div>
 
 			<div className="repository-description">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Vivamus eget justo sed quam posuere consectetur ac quis odio. 
-					Nullam imperdiet nisl sit amet lorem sollicitudin tristique.
-					Nullam imperdiet nisl sit amet lorem sollicitudin tristique.
-					Nullam imperdiet nisl sit amet lorem sollicitudin tristique.
-					Nullam imperdiet nisl sit amet lorem sollicitudin tristique.
-					Nullam imperdiet nisl sit amet lorem sollicitudin tristique.
-				</p>
+				<p>{description && description}</p>
 			</div>
 
-			<Button
-			title="Ver Repositório"
-			url="google.com"
-			/>
+			<div className="repository-footer">
+        <Button
+        title="Ver Repositório"
+        url={url}
+
+        />
+
+        {
+        pageUrl &&
+        <a className="view-project" href={pageUrl} target="_blank">
+          <img src={linkIcon} alt="Icone para visualizar o projeto no ar." />
+        </a>
+        }
+
+			</div>
 		</div>
 	);
 }

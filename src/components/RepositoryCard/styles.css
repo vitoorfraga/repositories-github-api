@@ -11,6 +11,7 @@
   font-size: 14px;
   font-weight: 700;
   color: var(--text-color-1);
+  text-transform: uppercase;
 }
 
 .repository-description {
@@ -21,4 +22,21 @@
   margin-bottom: 24px;
   color: var(--text-color-2);
   overflow-y: hidden;
+}
+
+.repository-footer{
+  display: flex;
+  align-items: center;
+  gap: 5.7px;
+}
+
+.view-project{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: var(--gray);
+  border: 1px solid var(--cyan);
+  border-radius: 8px;
+  cursor: pointer;
 }
