@@ -1,0 +1,24 @@
+@media (max-width: 1200px) {
+  .repositories {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 34px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 870px) {
+  .content-grid{
+    grid-template-columns: 1fr ;
+    gap: 40px;
+  }
+
+  .repositories{
+    margin-top: 34px;
+  }
+
+  .left-sidebar{
+    align-items: center;
+  }
+}

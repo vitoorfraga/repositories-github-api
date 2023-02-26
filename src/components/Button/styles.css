@@ -1,0 +1,17 @@
+.button{
+    background-color: var(--cyan);
+    color: var(--text-color-1);
+    font-size: 12px;
+    font-weight: 700;
+
+    width: 137px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+    margin-left: auto;
+
+}

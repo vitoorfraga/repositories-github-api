@@ -1,0 +1,17 @@
+.card-user{
+    width: 288px;
+    height: 270px;
+    background-color: var(--gray);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.user-name{
+    font-size: 14px;
+    font-weight: 700;
+}

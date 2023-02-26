@@ -1,0 +1,24 @@
+.repository-card {
+  max-width: 100%;
+  min-width: 369px;
+  height: 186px;
+  background-color: var(--gray);
+  border-radius: 6px;
+  padding: 19px;
+}
+
+.repository-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-color-1);
+}
+
+.repository-description {
+  height: 70px;
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 5px;
+  margin-bottom: 24px;
+  color: var(--text-color-2);
+  overflow-y: hidden;
+}

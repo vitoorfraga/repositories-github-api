@@ -1,0 +1,21 @@
+:root{
+    --white: #fff;
+    --black: #000;
+    --cyan: #00B086;
+
+    --background-color: #000;
+    --gray: #282828;
+    --text-color-1: #fff;
+    --text-color-2: #B8B8B8;
+}
+
+.light-mode:root{
+    --background-color: #fff;
+    --gray: #E7E7E7;
+    --text-color-1: #000000;
+    --text-color-2: #343434;
+}
+
+*{
+    transition: background .2s ease;
+}

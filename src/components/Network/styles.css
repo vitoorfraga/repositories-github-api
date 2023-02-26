@@ -1,0 +1,22 @@
+.networks{
+    width: 288px;
+    height: 83px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+
+    background-color: var(--gray);
+    border-radius: 8px;
+}
+
+.network{
+    background-color: var(--cyan);
+    border-radius: 8px;
+    padding: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

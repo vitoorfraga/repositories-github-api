@@ -1,0 +1,9 @@
+.repository-card {
+    min-width: 100%;
+  }
+
+  @media (max-width: 1200px) {
+    .repository-card {
+        min-width: 100%;
+      }
+  }
