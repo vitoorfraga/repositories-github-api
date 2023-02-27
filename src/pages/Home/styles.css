@@ -2,7 +2,7 @@
     margin-top: 37px;
     display: grid;
     grid-template-columns: 288px 1fr ;
-    gap: 100px
+    gap: 100px;
 }
 
 .left-sidebar{
@@ -13,8 +13,10 @@
 
 .repositories{
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     margin-top: 34px;
     padding: 0 10px;
+    
 }

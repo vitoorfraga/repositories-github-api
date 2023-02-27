@@ -3,8 +3,8 @@
     border: 1px solid var(--gray);
     border-radius: 8px;
 
-    min-width: 60%;
-    max-width: 60%;
+    width: 98%;
+    margin: 0 auto;
     height: 40px;
     padding: 17px 11px;
 
@@ -15,9 +15,9 @@
 
 .search-bar::placeholder{
    color: var(--text-color-2);
-   font-style: italic; 
 }
 
 .search-bar:focus{
     outline: none;
+    background-color: var(--gray);
 }
