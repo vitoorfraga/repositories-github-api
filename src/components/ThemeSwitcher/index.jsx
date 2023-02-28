@@ -6,36 +6,39 @@ function ThemeSwitcher() {
 
   const [theme, setTheme] = React.useState('dark-mode')
 
+  
   React.useEffect(() => {
+    const html = document.querySelector('html')
     if (localStorage.getItem('user-theme') === null) {
-      console.log('nenhum tema anterior')
       setTheme('dark-mode')
+      window.localStorage.setItem('user-theme', 'dark-mode')
+      html.classList.add('dark-mode')
     }
     else {
       const localStorageTheme = localStorage.getItem('user-theme')
-
-      console.log(`Valor do localStorage: ${localStorageTheme}`)
       setTheme(localStorageTheme)
+      html.classList.add(localStorageTheme)
     }
-
-    const html = document.querySelector('html')
     html.classList.toggle(theme)
   }, [])
 
 
   const handleClick = () => {
+
     const localStorageTheme = localStorage.getItem('user-theme')
-
-    console.log(localStorageTheme)
+    setTheme(localStorageTheme)
     const html = document.querySelector('html')
-    html.classList.toggle('light-mode')
-
+    
     if (theme == 'dark-mode') {
-      localStorage.setItem('user-theme', 'dark-mode')
+      html.classList.remove('dark-mode')
+      html.classList.add('light-mode')
+      localStorage.setItem('user-theme', 'light-mode')
       setTheme('light-mode')
     } else if (theme == 'light-mode') {
+      html.classList.remove('light-mode')
+      html.classList.add('dark-mode')
       setTheme('dark-mode')
-      localStorage.setItem('user-theme', 'light-mode')
+      localStorage.setItem('user-theme', 'dark-mode')
     }
 
   }

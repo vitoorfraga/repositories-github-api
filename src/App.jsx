@@ -1,20 +1,9 @@
-import { useState } from 'react'
-import Header from './components/Header'
-import UserCard from './components/CardUser'
-import Network from './components/Network'
+import React from 'react';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <>
-      <Header />
-
-      <main className='container content-grid'>
-        <aside>
-          <UserCard />
-          <Network />
-        </aside>
-      </main>
-    </>
+      <Home />
   )
 }
 
