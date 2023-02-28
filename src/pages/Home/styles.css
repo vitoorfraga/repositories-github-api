@@ -17,6 +17,5 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     margin-top: 34px;
-    padding: 0 10px;
-    
+    padding: 0 10px
 }
