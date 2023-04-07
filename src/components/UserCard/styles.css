@@ -8,7 +8,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 22px;
 
     transition: box-shadow .3s ease-out;
 }
@@ -25,6 +24,15 @@
 
 .user-image img{
     width: 100%;
+}
+
+.my-infos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 24px;
+
+    gap: 4px;
 }
 
 .user-name{

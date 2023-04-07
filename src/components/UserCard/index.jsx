@@ -19,7 +19,10 @@ function UserCard() {
   return (
     <div className='card-user'>
       <img className="user-image" src={userData.avatar_url} alt="Vitor Fraga Foto" />
-      <span className='user-name'>{userData.name}</span>
+      <div className="my-infos">
+        <span className='user-name'>{userData.name}</span>
+        <span>São Paulo - Brazil</span>
+      </div>
     </div>
   )
 }
